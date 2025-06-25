@@ -1,0 +1,21 @@
+{
+  "name": "boutique-voilee",
+  "version": "1.0.0",
+  "description": "E-commerce pour boutique de vêtements pour femmes voilées",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:frontend": "cd frontend && npm start",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:admin": "cd admin && npm start",
+    "install:all": "npm install && cd frontend && npm install && cd ../backend && npm install && cd ../admin && npm install",
+    "build": "cd frontend && npm run build && cd ../admin && npm run build",
+    "start": "cd backend && npm start"
+  },
+  "keywords": ["e-commerce", "boutique", "voilee", "vêtements"],
+  "author": "Boutique Voilée",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+} 
